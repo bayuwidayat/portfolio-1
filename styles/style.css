@@ -1,0 +1,219 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/* VARIABLE */
+:root {
+  --primary-color: #fb6a27;
+  --dark-color: #030304;
+  --gray-color: gray;
+
+  --h1-font-size: 40px;
+  --h2-font-size: 32px;
+  --small-font-size: 14px;
+}
+
+/* RESET CSS */
+* {
+  padding: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.breadcrumb-item {
+  font-size: var(--small-font-size);
+}
+
+.breadcrumb-item a:hover {
+  color: var(--primary-color);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  font-family: "remixicon" !important;
+  content: "\ea6e" !important;
+}
+
+.page-item .page-link {
+  border-radius: 5px;
+}
+
+.breadcrumb-item a,
+.breadcrumb-item.active,
+.page-item .page-link {
+  color: var(--gray-color);
+}
+
+.page-item.active .page-link {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.btn-light {
+  color: var(--gray-color);
+}
+
+.btn-light:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+/* GLOBAL CSS */
+section {
+  padding: 70px 0;
+}
+
+section .section-title {
+  font-size: var(--h2-font-size);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-orange,
+.bg-orange {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-orange:hover {
+  background-color: var(--dark-color);
+  color: white;
+}
+
+.text-orange {
+  color: var(--primary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.fs-7 {
+  font-size: var(--small-font-size);
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+
+/* CSS PER SECTION */
+
+/* NAVBAR */
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {
+  color: var(--primary-color);
+}
+
+.navbar .nav-item {
+  padding: 0 10px;
+}
+
+/* HEADER */
+.header-section .header-title {
+  font-size: var(--h1-font-size);
+}
+
+.header-section .header-skill {
+  color: var(--dark-color);
+}
+
+.header-section .header-skill:hover {
+  color: var(--primary-color);
+}
+
+.header-section .header-skill i {
+  transition: 0.3s;
+}
+.header-section .header-skill:hover i {
+  transform: rotate(-45deg);
+}
+.header-section .header-img,
+.skills-section .skills-img {
+  width: 90%;
+}
+
+/* PORTFOLIO */
+.portfolio-section .card .card-img-top {
+  /* height: 240px; */
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-section .card .card-img-top {
+    height: 100px;
+  }
+}
+
+/* SKILLS */
+.skills-section,
+footer {
+  background-color: var(--dark-color);
+}
+
+.skills-section .progress-bar {
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--gray-color);
+}
+
+.skills-section .progress-bar .progress {
+  background-color: var(--primary-color);
+}
+
+.sidebar-list a,
+.sidebar a {
+  color: var(--gray-color);
+}
+
+.sidebar-list a:hover,
+.sidebar a:hover {
+  color: var(--primary-color);
+}
+
+.tags a {
+  font-size: var(--small-font-size);
+  padding: 5px 20px;
+  background: white;
+  border: 1px solid var(--bs-gray-300);
+  margin-right: 5px;
+  line-height: 300%;
+}
+
+.tags a:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border: 1px solid var(--primary-color);
+}
+
+#goTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--dark-color);
+  color: white;
+  cursor: pointer;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+#goTopBtn:hover {
+  background-color: var(--primary-color);
+}
